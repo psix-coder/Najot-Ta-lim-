@@ -1,0 +1,9 @@
+nvali - 2 qiyinchilik darajasinBarcha to'g'ri javoblar: 2
+ Noto'g'ri javoblar: 2
+vali - 3 
+ Qiyinchilik darajasinBarcha to'g'ri javoblar: 2
+ Noto'g'ri javoblar: 1
+vali - 5 
+ Qiyinchilik darajasi 5 
+ Barcha to'g'ri javoblar: 1
+ Noto'g'ri javoblar: 2

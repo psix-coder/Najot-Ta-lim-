@@ -1,0 +1,9 @@
+
+Ali - 1 
+ Qiyinchilik darajasi 1 
+ Barcha to'g'ri javoblar: 2
+ Noto'g'ri javoblar: 1
+ali - 2 
+ Qiyinchilik darajasi 2 
+ Barcha to'g'ri javoblar: 3
+ Noto'g'ri javoblar: 0

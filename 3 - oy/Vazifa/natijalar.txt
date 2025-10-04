@@ -1,0 +1,31 @@
+
+Abdulloh Barcha to'g'ri javoblar: 2
+Noto'g'ri javoblar: 1
+begzod Barcha to'g'ri javoblar: 2
+Noto'g'ri javoblar: 0
+ali Barcha to'g'ri javoblar: 3
+Noto'g'ri javoblar: 1
+ali Barcha to'g'ri javoblar: 2
+Noto'g'ri javoblar: 0
+sdf Barcha to'g'ri javoblar: 0
+Noto'g'ri javoblar: 2
+vali Barcha to'g'ri javoblar: 0
+Noto'g'ri javoblar: 0
+ali  Barcha to'g'ri javoblar: 0
+Noto'g'ri javoblar: 0
+vali Barcha to'g'ri javoblar: 0
+Noto'g'ri javoblar: 0
+vali Barcha to'g'ri javoblar: 0
+Noto'g'ri javoblar: 0
+ali Barcha to'g'ri javoblar: 0
+Noto'g'ri javoblar: 0
+al Barcha to'g'ri javoblar: 1
+Noto'g'ri javoblar: 1
+ali Barcha to'g'ri javoblar: 3
+Noto'g'ri javoblar: 0
+& C:/Users/user/AppData/Local/Programs/Python/Python312/python.exe "c:/Users/user/Documents/Najot Talim/3 - oy/Vazifa/vazifa.py" Barcha to'g'ri javoblar: 2
+Noto'g'ri javoblar: 1
+ali Barcha to'g'ri javoblar: 3
+Noto'g'ri javoblar: 1
+Abdulloh Barcha to'g'ri javoblar: 2
+Noto'g'ri javoblar: 0
