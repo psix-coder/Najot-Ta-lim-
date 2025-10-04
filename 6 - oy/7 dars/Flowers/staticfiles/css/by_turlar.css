@@ -1,0 +1,14 @@
+ul.gul-list .gul-item {
+    width: calc(33.33% - 20px);
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+ul.gul-list .gul-item:hover {
+    background: #e7e7e7;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Courses{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'course_list' %}">Mening kurslarim</a></h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="{% url 'course_list' %}">Barcha kurslar</a></li>
+                <li><a href="{% url 'add_post' %}">Maqola qo'shish</a></li>
+                <li><a href="{% url 'register' lesson_id=1 %}">Darsga yozilish</a></li>
+                <li><a href="{% url 'login' %}">Tizimga kirish</a></li> 
+                <li><a href="{% url 'logout' %}">Chiqish</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <form id="add_comment">
+        <textarea id="commentText" placeholder="Izohingizni yozing..."></textarea>
+        <button type="submit">Yuborish</button>
+      </form>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>

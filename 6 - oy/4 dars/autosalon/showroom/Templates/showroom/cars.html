@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8dadc, #f1faee); /* Avtomobillar ro'yxatidagi rangni bosh sahifa bilan bir xil qilish */
+            color: #1d3557;
+            font-family: 'Arial', sans-serif;
+            animation: backgroundShift 10s infinite;
+        }
+        .container {
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #457b9d; 
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease;
+        }
+        .card-img-top {
+            max-width: 100%;
+            max-height: 300px; 
+            object-fit: cover; 
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: fadeInUp 1.5s ease;
+        }
+        .card:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .card-body {
+            text-align: center;
+            background: linear-gradient(135deg, #f4f9f9, #d9f9f9); /* Avtomobillar ro'yxatidagi rangni bosh sahifa bilan bir xil qilish */
+            color: #1d3557;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .card-body:hover {
+            background-color: #e8f7f7;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2a9d8f;
+            transition: color 0.3s ease;
+        }
+        .card-title:hover {
+            color: #1d3557;
+        }
+        .card-text {
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #264653;
+        }
+        .btn-primary {
+            background-color: #52b788;
+            border: none;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #40916c;
+            transform: translateY(-5px) scale(1.1);
+        }
+        .btn-primary:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(82, 183, 136, 0.5);
+        }
+        footer {
+            background-color: #457b9d; /* Bosh sahifa bilan mos rang */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes backgroundShift {
+            0% {
+                background: linear-gradient(135deg, #a8dadc, #f1faee);
+            }
+            50% {
+                background: linear-gradient(135deg, #f1faee, #a8dadc);
+            }
+            100% {
+                background: linear-gradient(135deg, #a8dadc, #f1faee);
+            }
+        }
+    </style>
+    <title>Avtomobillar ro'yxati</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Avtomobillar Ro'yxati</h1>
+
+        <!-- Bosh sahifaga qaytish tugmasi -->
+        <div class="mb-4 text-center">
+            <a href="/" class="btn btn-secondary">Bosh sahifaga qaytish</a>
+        </div>
+
+        {% for car in cars %}
+            <div class="card mb-4">
+                {% if car.photo %}
+                    <img src="{{ car.photo.url }}" class="card-img-top" alt="{{ car.model_name }}">
+                {% else %}
+                    <img src="/static/images/default-car.jpg" class="card-img-top" alt="Default Car">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ car.model_name }}</h5>
+                    <p class="card-text">Narxi: ${{ car.price }}</p>
+                    <p class="card-text">Yili: {{ car.release_year }}</p>
+                    <a href="/car/{{ car.id }}" class="btn btn-primary">Batafsil</a>
+                </div>
+            </div>
+        {% endfor %}
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Avtomobillar Ro'yxati. <a href="#">Maxfiylik siyosati</a> | <a href="#">Shartlar</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

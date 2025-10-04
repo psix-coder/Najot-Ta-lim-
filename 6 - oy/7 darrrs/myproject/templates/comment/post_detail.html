@@ -1,0 +1,28 @@
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>
+
+<h3>Izohlar</h3>
+{% for comment in comments %}
+    <div>
+        <p><strong>{{ comment.author }}</strong> {{ comment.created_at }}</p>
+        <p>{{ comment.text }}</p>
+        {% if user == comment.author %}
+            <a href="{% url 'comment_edit' pk=comment.pk %}">Tahrirlash</a>
+            <a href="{% url 'comment_delete' pk=comment.pk %}">O'chirish</a>
+        {% endif %}
+    </div>
+{% empty %}
+    <p>Hozircha izohlar yo'q.</p>
+{% endfor %}
+
+<h3>Yangi izoh qo'shish</h3>
+{% if user.is_authenticated %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Yuborish</button>
+    </form>
+{% else %}
+    <p>Izoh qoldirish uchun <a href="{% url 'login' %}">kiring</a>.</p>
+{% endif %}
+

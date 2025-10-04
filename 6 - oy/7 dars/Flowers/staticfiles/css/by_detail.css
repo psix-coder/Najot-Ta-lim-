@@ -1,0 +1,29 @@
+.gul-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gul-detail-img {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gul-detail-info {
+    width: 45%;
+    font-size: 16px;
+}
+
+.gul-detail-info p {
+    margin-bottom: 10px;
+}
+
+.gul-detail-info strong {
+    color: #333;
+}
+
+
+body{
+    background-color: blanchedalmond;
+}

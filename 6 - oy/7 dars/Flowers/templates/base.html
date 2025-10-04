@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Flowers{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'posts_by_turlar' %}">Gullar</a></h1>
+        <nav>
+            <ul>
+                <a href="{% url 'posts_by_gullar' gullar_id=gul.id %}">Gullar bo'yicha postlar</a>
+
+
+            </ul>
+            <ul>
+                <li><a href="{% url  'add_post' %}">Maqola qo'shish!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<h2>Izohni tahrirlash</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Saqlash</button>
+</form>

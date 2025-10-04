@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>All Flovers</h2>
+    <ul>
+        {% for gull in gullar %}
+            <li><a href="{% url 'posts_by_turlar' gullar.id %}">{{ gull.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
