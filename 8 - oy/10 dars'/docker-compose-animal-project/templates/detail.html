@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-detail-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .animal-detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .animal-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+            text-align: center;
+        }
+        .animal-info {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Animal Details</h1>
+        <div class="animal-detail-card">
+            <div class="animal-name">{{ animal.name }}</div>
+            <p class="animal-info"><strong>Weight:</strong> {{ animal.weight }} kg</p>
+            <p class="animal-info"><strong>Category:</strong> {{ animal.category.name }}</p>
+        </div>
+        <a class="back-btn" href="{% url 'home' %}">Back to Main Page</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .category {
+            margin: 10px;
+            padding: 10px 15px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+        .category:hover {
+            background: #0056b3;
+        }
+        .animals-container {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .animals {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .animal-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .animal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .animal-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .animal-weight {
+            font-size: 16px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .animal-category {
+            font-size: 14px;
+            color: #888;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .main-page-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .main-page-btn {
+            display: inline-block;
+            background: #007BFF;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-page-btn:hover {
+            background: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animals Category</h1>
+        <div id="categories">
+            {% for category in categories %}
+            <a class="category" href="{% url 'sort_animals' category.pk %}">{{ category.name }}</a>
+            {% endfor %}
+        </div>
+        <div class="animals-container">
+            <h2>Animals List</h2>
+            <div class="animals" id="animals">
+                {% for animal in animals %}
+                <div class="animal-card">
+                    <div class="animal-name"><a href="{% url 'detail' animal.pk %}">{{ animal.name }}</a></div>
+                    <div class="animal-weight">Weight: {{ animal.weight }} kg</div>
+                    <div class="animal-category">Category: {{ animal.category.name }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="main-page-container">
+        <a class="category main-page-btn" href="{% url 'home' %}">All Animals</a>
+    </div>
+</body>
+</html>

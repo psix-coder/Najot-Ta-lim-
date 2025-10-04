@@ -1,0 +1,22 @@
+name: Toxir
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: MyApp
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=school
+    ports:
+      - "5432:5432"
+    volumes:
+      - schhol_data:/var/lib/postgresql/data
+
+volumes:
+  schhol_data:
+    
