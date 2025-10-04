@@ -1,0 +1,11 @@
+ism = "Abdulloh"
+fam = "Ahmadjonov"
+shah = "Fargona"
+yil = "2007"
+joy = "Oltiariq"
+tm = "Hamza"
+kun = "29"
+oy = "Noyabr"
+mk = "39"
+sf = "11"
+print(f"Assalomu alaykum mening ism familyam {ism}! {ism} {fam} Men {yil} yili {shah} shahri {joy} tumani da tugilganman. Hozirda {tm} shaharchasidagi {mk} sonli maktabning {sf} sinif oquvchisiman!")

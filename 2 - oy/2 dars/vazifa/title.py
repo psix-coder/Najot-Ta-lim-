@@ -1,0 +1,7 @@
+ism = input("Ismingizni kiriting! ")
+ism = ism.title()
+fam = input("Familyangizni kiriting! ")
+fam = fam.title()
+joy = input("Yashash joyingizni kiriting! ")
+joy = joy.title()
+print(f"Assalomu alaykum {ism} {fam}. Sizning yashash joyingiz {joy} da bolgani uchun bizni markazimizda 15% chegirma asosoida oqiy olasiz!")
