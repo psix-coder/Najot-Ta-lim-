@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Microsoft"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 04:35:29 pm"/>
+        <attribute name="created" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjMxOjQ3IHBtOzMzNjk="/>
+        <attribute name="edited" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjMxOjUwIHBtOzE7TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjI0OjIzIHBtO2EgdmEgYiBuaSBuZWNoYSBtYXJ0YSBheWxhbmlzaGkuZnByZzsxMDI1NA=="/>
+        <attribute name="edited" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjM1OjI5IHBtOzE7MzQ4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ixtiyoriy son bering:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Ixtiyoriy son bering:&quot;" newline="True"/>
+            <input variable="b"/>
+            <for variable="i" start="b-1" end="a+2" direction="dec" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+            <assign variable="i" expression="b-a"/>
+            <output expression="&quot;Sikilni nechmarta ishlashi &quot;&amp;i" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

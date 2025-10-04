@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-23 12:20:28 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDc6Mjc6MjEgIjsyNjc1"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMzsiMTA6NTU6MzAgIjsxO3VzZXI7V0lOLVBHNEs0TUo3UjlOOzIwMjQtMDYtMjI7IjA3OjI3OjIxICI7bWFuZml5IG11c2JhdCBib3JsaWdpbmkgYW5pcWxhc2guZnByZzs5MjQ5"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMzsiMTI6MjA6MjggIjs3OzI3ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="musbat" type="Integer" array="False" size=""/>
+            <declare name="manfiy" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="musbat" expression="0"/>
+            <assign variable="manfiy" expression="0"/>
+            <if expression="(a &gt; 0 &amp;&amp; b &gt; 0 &amp;&amp; c &gt; 0)">
+                <then>
+                    <if expression="(a &gt; 0 &amp;&amp; b  &gt; 0 ||b  &gt; 0 &amp;&amp; c &gt; 0 || a &gt; 0 &amp;&amp; c &gt; 0 )">
+                        <then>
+                            <output expression="&quot;3 ta musbat&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;1 ta musbat son bor&quot;" newline="True"/>
+                            <output expression="&quot;2 ta manfiy son bor&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="(a &gt; 0 || b  &gt; 0 || c &gt; 0)">
+                        <then>
+                            <output expression="&quot;1 ta manfiy&quot;" newline="True"/>
+                            <output expression="&quot;2 ta musbat son bor&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;3 ta manfiy&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

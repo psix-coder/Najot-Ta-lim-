@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-21 03:23:13 "/>
+        <attribute name="created" value="dXNlcjtXSU4tRUxKODFOTVBHU0c7MjAyNC0wNi0yMDsiMDM6MzI6NTEgIjsyNjk5"/>
+        <attribute name="edited" value="dXNlcjtXSU4tRUxKODFOTVBHU0c7MjAyNC0wNi0yMDsiMDU6MTk6MjEgIjsyOzI4MTI="/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMTsiMDM6MjM6MTMgIjsxOzI3NzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="avtosoni" type="Integer" array="False" size=""/>
+            <declare name="tannarxi" type="Real" array="False" size=""/>
+            <declare name="sotish" type="Real" array="False" size=""/>
+            <declare name="foiz" type="Integer" array="False" size=""/>
+            <declare name="chiqim" type="Real" array="False" size=""/>
+            <declare name="foyda" type="Integer" array="False" size=""/>
+            <output expression="&quot;avto soni&quot;" newline="True"/>
+            <input variable="avtosoni"/>
+            <output expression="&quot;tan narxi&quot;" newline="True"/>
+            <input variable="tannarxi"/>
+            <output expression="&quot;foizni kiriting&quot;" newline="True"/>
+            <input variable="foiz"/>
+            <output expression="&quot;uzbda sotilish summasi&quot;" newline="True"/>
+            <input variable="sotish"/>
+            <assign variable="chiqim" expression="(avtosoni*tannarxi)+((avtosoni*tannarxi)/100)*foiz"/>
+            <assign variable="foyda" expression="(avtosoni*sotish)-chiqim"/>
+            <output expression="&quot;chiqim &quot;&amp; chiqim" newline="True"/>
+            <output expression="&quot;foyda &quot;&amp; foyda" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-25 05:27:35 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNTsiMDU6MTY6NDYgIjsyNjgx"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNTsiMDU6Mjc6MzUgIjsxOzI3ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="karta1" type="String" array="False" size=""/>
+            <declare name="karta2" type="String" array="False" size=""/>
+            <declare name="summa" type="String" array="False" size=""/>
+            <declare name="summa1" type="String" array="False" size=""/>
+            <declare name="summa2" type="String" array="False" size=""/>
+            <output expression="&quot;Karta raqamingizni kiriting&quot;" newline="True"/>
+            <input variable="karta1"/>
+            <output expression="&quot;Ikkinchi kartani kiriting&quot;" newline="True"/>
+            <input variable="karta2"/>
+            <if expression="len(karta1)=16 and len(karta2)=16">
+                <then>
+                    <output expression="&quot;Kartadafi summani kiriting&quot;" newline="True"/>
+                    <input variable="summa"/>
+                    <assign variable="summa1" expression="summa"/>
+                    <output expression="&quot;Jonatiladigan summani kiriting&quot;" newline="True"/>
+                    <input variable="summa2"/>
+                    <if expression="summa1 &lt;= summa2">
+                        <then>
+                            <output expression="&quot;Pulingiz yuborildi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Xato&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Xatolik bor&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

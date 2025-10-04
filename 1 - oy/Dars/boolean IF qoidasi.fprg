@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-22 03:01:39 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDI6MjU6MzMgIjsyNjcx"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDM6MDE6MzkgIjszOzI3ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yosh" type="Integer" array="False" size=""/>
+            <output expression="&quot; yoshingiz nechida &quot;" newline="True"/>
+            <input variable="yosh"/>
+            <if expression="yosh &lt; 18">
+                <then>
+                    <output expression="&quot; yoshsiz &quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="yosh &lt; 50">
+                        <then>
+                            <output expression="&quot; o'rta yoshsiz &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; yoshingiz ulug &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

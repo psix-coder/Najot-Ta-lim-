@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 03:28:58 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMDI6NTQ6MzggIjsyNjgz"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMDM6Mjg6NTggIjszOzI3OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, number" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nechta nafar mehon bor&quot;" newline="True"/>
+            <input variable="number"/>
+            <for variable="i" start="1" end="number" direction="inc" step="1">
+                <declare name="ism" type="String" array="False" size=""/>
+                <output expression="&quot;Kelgan mehmonlar sonini kiriting&quot;" newline="True"/>
+                <input variable="ism"/>
+                <output expression="&quot;Asslomu alaykum &quot;&amp; ism &amp; &quot;xush kelibsiz &quot;" newline="True"/>
+            </for>
+            <output expression="&quot;Mehmonlar tugaganligi sababli dastur toxtadi &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

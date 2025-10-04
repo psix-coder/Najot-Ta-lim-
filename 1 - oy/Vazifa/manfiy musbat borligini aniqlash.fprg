@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-23 10:05:08 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDc6Mjc6MjEgIjsyNjc1"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMzsiMTA6MDU6MDggIjs1OzI3ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &lt; 0">
+                <then>
+                    <output expression="&quot;manfiy&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;musbat&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="b &lt; 0">
+                <then>
+                    <output expression="&quot;manfiy&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;musbat&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="c &lt; 0">
+                <then>
+                    <output expression="&quot;manfiy&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;musbat&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

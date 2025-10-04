@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-20 05:20:32 "/>
+        <attribute name="created" value="dXNlcjtXSU4tRUxKODFOTVBHU0c7MjAyNC0wNi0yMDsiMDM6MzI6NTEgIjsyNjk5"/>
+        <attribute name="edited" value="dXNlcjtXSU4tRUxKODFOTVBHU0c7MjAyNC0wNi0yMDsiMDU6MTk6MjEgIjsyOzI4MTI="/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMDsiMDU6MjA6MzIgIjsxOzI3NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="avtosoni" type="Integer" array="False" size=""/>
+            <declare name="tannarxi" type="Real" array="False" size=""/>
+            <declare name="sotish" type="Real" array="False" size=""/>
+            <declare name="foiz" type="Integer" array="False" size=""/>
+            <declare name="zarar" type="Real" array="False" size=""/>
+            <declare name="foyda" type="Integer" array="False" size=""/>
+            <output expression="&quot;avto soni&quot;" newline="True"/>
+            <input variable="avtosoni"/>
+            <output expression="&quot;tan narxi&quot;" newline="True"/>
+            <input variable="tannarxi"/>
+            <output expression="&quot;foizni kiriting&quot;" newline="True"/>
+            <input variable="foiz"/>
+            <output expression="&quot;uzbda sotilish summasi&quot;" newline="True"/>
+            <input variable="sotish"/>
+            <assign variable="zarar" expression="(avtosoni*tannarxi)+((avtosoni*tannarxi)/100)*foiz"/>
+            <assign variable="foyda" expression="(avtosoni*sotish)-zarar"/>
+            <output expression="&quot;zarar &quot;&amp; zarar &amp; &quot;foyda &quot; &amp; foyda" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

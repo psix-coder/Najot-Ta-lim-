@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-23 10:33:34 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDc6Mjc6MjEgIjsyNjc1"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMzsiMTA6MzM6MzQgIjs2OzI3ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="(a &gt; 0 &amp;&amp; b &gt; 0 &amp;&amp; c &gt; 0)">
+                <then>
+                    <output expression="&quot;3 ta musbat son bor&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="(a &gt; 0 &amp;&amp; b  &gt; 0 ||b  &gt; 0 &amp;&amp; c &gt; 0 || a &gt; 0 &amp;&amp; c &gt; 0 )">
+                <then>
+                    <output expression="&quot;2ta musbat son bor&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="(a &gt; 0 || b  &gt; 0 || c &gt; 0)">
+                <then>
+                    <output expression="&quot;1 ta musbat  son bor&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

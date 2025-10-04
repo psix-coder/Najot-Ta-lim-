@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-29 02:42:44 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yOTsiMDI6MTg6NDYgIjsyNjg0"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yOTsiMDI6NDI6NDQgIjsxOzI3ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="son, i" type="Integer" array="False" size=""/>
+            <declare name="result" type="Boolean" array="False" size=""/>
+            <assign variable="result" expression="true"/>
+            <output expression="&quot;Naecha sonni tublikka aylantirmoqchisiz&quot;" newline="True"/>
+            <input variable="son"/>
+            <for variable="i" start="2" end="son-1" direction="inc" step="1">
+                <if expression="son%i==0">
+                    <then>
+                        <assign variable="result" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 11:35:32 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMTE6MjY6NDcgIjsyNjgy"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMTE6MzU6MzIgIjsyOzI3ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, counter, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;1 - nomalum sonni kiriting&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;2 - nomalum sonni kiriting&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="counter" expression="0"/>
+            <for variable="i" start="a" end="b" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+            </for>
+            <output expression="&quot;Chiqarilgan sonlar soni: &quot;&amp;&quot; &quot;&amp;counter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

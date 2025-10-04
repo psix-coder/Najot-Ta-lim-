@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Microsoft"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 04:24:15 pm"/>
+        <attribute name="created" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjE4OjU0IHBtOzMzNzI="/>
+        <attribute name="edited" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjI0OjE1IHBtOzE7MzQ3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ixtiyoriy son bering:&quot;" newline="True"/>
+            <input variable="k"/>
+            <output expression="&quot;Ixtiyoriy son bering:&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="k" start="1" end="n" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

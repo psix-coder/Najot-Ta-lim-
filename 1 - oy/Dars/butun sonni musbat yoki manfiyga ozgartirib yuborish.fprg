@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-22 07:59:22 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDc6Mjc6MjEgIjsyNjc1"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDc6NTk6MjIgIjszOzI3OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="son" type="Integer" array="False" size=""/>
+            <declare name="natija" type="Integer" array="False" size=""/>
+            <output expression="&quot; biror son kiriting &quot;" newline="True"/>
+            <input variable="son"/>
+            <if expression="son%2==0">
+                <then>
+                    <output expression="son - 2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="son + 1" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

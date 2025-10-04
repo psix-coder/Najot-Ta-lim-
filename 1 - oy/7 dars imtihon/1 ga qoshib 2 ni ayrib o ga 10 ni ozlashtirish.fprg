@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-23 09:58:18 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMzsiMDk6NDQ6MjggIjsyNjg0"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMzsiMDk6NTg6MTggIjsxOzI3OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;butun son kiriting&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a &gt;= 0">
+                <then>
+                    <if expression="a&lt;=0">
+                        <then>
+                            <output expression="a + 10" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="a+1" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="a+2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

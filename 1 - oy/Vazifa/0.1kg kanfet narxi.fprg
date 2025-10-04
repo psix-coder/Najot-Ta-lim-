@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Microsoft"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 05:32:53 pm"/>
+        <attribute name="created" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjQyOjQ3IHBtOzMzNzE="/>
+        <attribute name="edited" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjQyOjUyIHBtOzE7TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA0OjM1OjM2IHBtOzY5MDU="/>
+        <attribute name="edited" value="TWljcm9zb2Z0O0RFU0tUT1AtQzZWQUhNQTsyMDI0LTA2LTI3OzA1OjMyOjUzIHBtOzI7MzQ3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kg, narx" type="Integer" array="False" size=""/>
+            <output expression="&quot; 1kg kanfet narxini kirting:&quot;" newline="True"/>
+            <input variable="narx"/>
+            <for variable="kg" start="1" end="10" direction="inc" step="1">
+                <output expression="kg/10&amp;&quot;kg kanfetlar narxi &quot;&amp;kg*narx/10" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

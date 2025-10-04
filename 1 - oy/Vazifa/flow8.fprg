@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-14 03:32:20 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0xNDsiMDI6NTc6MzkgIjsyNjgz"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0xNDsiMDM6MzI6MjAgIjs4OzI3ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SON1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Son kiriting&quot;" newline="True"/>
+            <input variable="SON1"/>
+            <declare name="yuzliklar" type="Integer" array="False" size=""/>
+            <assign variable="yuzliklar" expression="SON1 / 60"/>
+            <declare name="secund" type="Integer" array="False" size=""/>
+            <assign variable="secund" expression="SON1 - yuzliklar * 60"/>
+            <output expression="yuzliklar &amp; &quot;minut va &quot; &amp; secund &amp; &quot;sekund&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

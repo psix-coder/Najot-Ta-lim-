@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-14 09:49:31 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0xNDsiMDg6MzI6MzAgIjsyNjcz"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0xNDsiMDk6NDk6MzEgIjsxOzI3OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="son1" type="Integer" array="False" size=""/>
+            <declare name="son2" type="Integer" array="False" size=""/>
+            <declare name="son3" type="Integer" array="False" size=""/>
+            <declare name="son4" type="Integer" array="False" size=""/>
+            <declare name="son5" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birorbir sonni kiriting&quot;" newline="True"/>
+            <input variable="son1"/>
+            <assign variable="son3" expression="son1%100"/>
+            <assign variable="son2" expression="son3%10"/>
+            <assign variable="son4" expression="son2*100"/>
+            <assign variable="son5" expression="son1/10"/>
+            <output expression="son4+son5" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

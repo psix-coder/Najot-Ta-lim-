@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 11:38:35 "/>
+        <attribute name="created" value="dXNlcjtXSU4tVjdTOFFIOENCQ0M7MjAyNC0wNi0yNzsiMTA6NTg6MzAgIjsyNjgx"/>
+        <attribute name="edited" value="dXNlcjtXSU4tVjdTOFFIOENCQ0M7MjAyNC0wNi0yNzsiMTE6MTg6MzIgIjsxOzI3ODg="/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMTE6Mzg6MzUgIjsxOzI3OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, counter, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;A ga qiymat kiriting&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;B ga qiymat kiriting&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="counter" expression="0"/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="a+1"/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="b-1"/>
+            <for variable="i" start="d" end="f" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+            </for>
+            <output expression="&quot;Sonlar&quot; &amp; &quot; &quot; &amp; counter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

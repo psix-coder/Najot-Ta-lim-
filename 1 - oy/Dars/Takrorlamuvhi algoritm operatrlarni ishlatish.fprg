@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-27 03:09:11 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMDI6NTQ6MzggIjsyNjgz"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yNzsiMDM6MDk6MTEgIjsyOzI3ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="start" type="Integer" array="False" size=""/>
+            <declare name="end" type="Integer" array="False" size=""/>
+            <declare name="status" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nechadan aylansin&quot;" newline="True"/>
+            <input variable="start"/>
+            <output expression="&quot;Nechagacha aylansin&quot;" newline="True"/>
+            <input variable="end"/>
+            <output expression="&quot;Nechtadan aylansin&quot;" newline="True"/>
+            <input variable="status"/>
+            <for variable="i" start="start" end="end" direction="inc" step="status">
+                <output expression="i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

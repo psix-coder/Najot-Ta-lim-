@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-14 03:19:32 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0xNDsiMDI6NTc6MzkgIjsyNjgz"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0xNDsiMDM6MTk6MzIgIjszOzI3ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SON1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Son kiriting&quot;" newline="True"/>
+            <input variable="SON1"/>
+            <declare name="yuzliklar" type="Integer" array="False" size=""/>
+            <declare name="onliklar" type="Integer" array="False" size=""/>
+            <declare name="birliklar" type="Integer" array="False" size=""/>
+            <declare name="NewNumber" type="Integer" array="False" size=""/>
+            <assign variable="yuzliklar" expression="SON1 / 100"/>
+            <assign variable="onliklar" expression="SON1 / 10 % 10"/>
+            <assign variable="birliklar" expression="SON1 % 10"/>
+            <assign variable="NewNumber" expression="yuzliklar * 100 + birliklar * 10 + onliklar"/>
+            <output expression="NewNumber" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

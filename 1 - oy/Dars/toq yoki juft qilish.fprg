@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-22 03:19:37 "/>
+        <attribute name="created" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDI6MjU6MzMgIjsyNjcx"/>
+        <attribute name="edited" value="dXNlcjtXSU4tUEc0SzRNSjdSOU47MjAyNC0wNi0yMjsiMDM6MTk6MzcgIjs1OzI3OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot; yoshingiz nechida &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n%2==0">
+                <then>
+                    <output expression="&quot;juft&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;toq&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
